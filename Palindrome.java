@@ -7,5 +7,12 @@
  */
 class Palindrome
 {
+    String input, reversed;
+    
+    Palindrome(String str)
+    {
+        input = str;
+        
+    }
     
 }

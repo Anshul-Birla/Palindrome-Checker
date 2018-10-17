@@ -1,5 +1,5 @@
 import apcslib.*;
-import 
+import chn.util.*;
 /**
  * Write a description of class PalinClient here.
  *
@@ -10,6 +10,12 @@ public class PalinClient
 {
     public static void main(String args[])
     {
+        String input;
+        ConsoleIO keyboard = new ConsoleIO();
+        
+        System.out.print("Enter your string: ");
+        input = keyboard.readLine();
+        
         
     }
 }
