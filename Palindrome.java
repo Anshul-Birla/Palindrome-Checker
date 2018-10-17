@@ -15,4 +15,10 @@ class Palindrome
         
     }
     
+    public String lower()
+    {
+        reversed = input.toLowerCase();
+        return reversed;
+    }
+    
 }

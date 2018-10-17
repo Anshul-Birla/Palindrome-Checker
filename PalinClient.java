@@ -16,6 +16,9 @@ public class PalinClient
         System.out.print("Enter your string: ");
         input = keyboard.readLine();
         
+        Palindrome pali = new Palindrome(input);
+        
+        
         
     }
 }
