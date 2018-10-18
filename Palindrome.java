@@ -24,7 +24,7 @@ class Palindrome
     {
         int strngLength;
         strngLength = input.length();
-        String temp = input;
+        String temp = input, pali;
         String finalStr = "";
         
         for(x =0; x<strlength;x++)
@@ -37,7 +37,8 @@ class Palindrome
                     finalStr = finalStr + temp;
                 }   
     }
-    
+     strngLength = finalStr.length();
+     for(x = strngLength-1; 
     
     
 }
