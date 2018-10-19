@@ -38,7 +38,9 @@ class Palindrome
                 }   
     }
      strngLength = finalStr.length();
-     for(int x = strngLength-1; x>=0;x--)
+     
+     pali = finalStr.substring(strngLength-1);
+     for(int x = strngLength-1; x>0;x--)
      {
          temp = finalStr.substring(x-1,x);
          pali = pali+temp;
@@ -46,4 +48,7 @@ class Palindrome
         }
        reversed = pali;
     }
+    
+    
+   
 }
