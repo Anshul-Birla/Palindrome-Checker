@@ -8,6 +8,7 @@
 class Palindrome
 {
     private String input, reversed;
+    private boolean check;
     
     Palindrome(String str)
     {
@@ -32,7 +33,7 @@ class Palindrome
             temp = input.substring(x, x+1);
             if ((temp.compareTo("0") >= 0 && temp.compareTo("9") <= 0) || 
                 (temp.compareTo("A") >= 0 && temp.compareTo("Z") <= 0) ||
-                (temp.compareTo("a") >= 0 && temp.compareTo("z") <= 0));
+                (temp.compareTo("a") >= 0 && temp.compareTo("z") <= 0))
                 {
                     finalStr = finalStr + temp;
                 }   
@@ -47,8 +48,20 @@ class Palindrome
         
         }
        reversed = pali;
+       check(finalStr);
     }
     
+    private void check(String str)
+    {
+        if (reversed.equals(str))
+        {
+            check = true;
+        }
+        else 
+        {
+            check = false;
+        }
+        
     
    
 }
