@@ -22,21 +22,28 @@ public class PalinClient
         
             Palindrome pali = new Palindrome(input);
             
-            if (check ==1)
+            if(input.equals("Q"))
             {
-                System.out.print("This is NOT a palindrome");
+                System.out.print("You have ended the program\n");
             }
-        
-            if (pali.getCheck())
-            {
-                System.out.print("Yes, this is a palindrome\n");
-            }
-            else 
-            {
-                System.out.print("No, this is not a palindrome\n");
-            }
+            else
+                if (check ==1)
+                {
+                    System.out.print("This is NOT a palindrome\n");
+                }
+                else 
+                {
+                    if (pali.getCheck())
+                    {
+                        System.out.print("Yes, this is a palindrome\n");
+                    }
+                        else 
+                           {
+                              System.out.print("No, this is not a palindrome\n");
+                            }
+                }     
            
-        }while (!(input.equals("Q")));
-        
+    }while (!(input.equals("Q")));
     }
 }
+
