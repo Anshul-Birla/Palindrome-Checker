@@ -61,7 +61,11 @@ class Palindrome
         {
             check = false;
         }
-        
-    
    
+    }
+    
+    public boolean getCheck()
+    {
+        return check;
+    }
 }
