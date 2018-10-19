@@ -11,15 +11,32 @@ public class PalinClient
     public static void main(String args[])
     {
         String input;
+        int check;
         ConsoleIO keyboard = new ConsoleIO();
         
-        System.out.print("Enter your string: ");
-        input = keyboard.readLine();
+        do
+        {   
+            System.out.print("Enter your string: ");
+            input = keyboard.readLine();
+            check = input.length();
         
-        Palindrome pali = new Palindrome(input);
+            Palindrome pali = new Palindrome(input);
+            
+            if (check ==1)
+            {
+                System.out.print("This is NOT a palindrome");
+            }
         
-        
-        
+            if (pali.getCheck())
+            {
+                System.out.print("Yes, this is a palindrome\n");
+            }
+            else 
+            {
+                System.out.print("No, this is not a palindrome\n");
+            }
+           
+        }while (!(input.equals("Q")));
         
     }
 }
