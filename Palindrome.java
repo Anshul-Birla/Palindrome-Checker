@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Palindrome here.
+ * Methods for palindrome 
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @Anshul
+ * @V1)
  */
 class Palindrome
 {
