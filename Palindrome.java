@@ -28,7 +28,8 @@ class Palindrome
     {
         int strngLength;
         strngLength = input.length();
-        String temp ="", pali = "";
+        String temp ="";
+        String pali = "";
         String finalStr = "";
         
         for(int x =0; x<strngLength;x++)
